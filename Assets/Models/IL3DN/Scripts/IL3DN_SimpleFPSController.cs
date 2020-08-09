@@ -267,17 +267,17 @@ namespace IL3DN
                 isInSpecialSurface = true;
             }
 
-            if (other.CompareTag("ship"))
-            {
-                other.GetComponent<BoxCollider>().enabled = false;
-                other.GetComponent<ShipController>().StartFlying();
-                transform.SetParent(other.transform);
-                transform.localPosition = Vector3.zero;
-                transform.localEulerAngles = Vector3.zero;
-                m_WalkSpeed = 0;
-                m_RunSpeed = 0;
-                isEnabled = false;
-            }
+            // if (other.CompareTag("ship"))
+            // {
+            //     other.GetComponent<BoxCollider>().enabled = false;
+            //     other.GetComponent<ShipController>().StartFlying();
+            //     transform.SetParent(other.transform);
+            //     transform.localPosition = Vector3.zero;
+            //     transform.localEulerAngles = Vector3.zero;
+            //     m_WalkSpeed = 0;
+            //     m_RunSpeed = 0;
+            //     isEnabled = false;
+            // }
         }
 
         /// <summary>

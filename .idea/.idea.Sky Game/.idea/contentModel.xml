@@ -1280,6 +1280,24 @@
             </e>
           </e>
         </e>
+        <e p="nTools" t="Include">
+          <e p="PrefabPainter" t="Include">
+            <e p="Docs" t="Include">
+              <e p="ChangeLog.txt" t="Include" />
+            </e>
+            <e p="Scripts" t="Include">
+              <e p="Editor" t="Include">
+                <e p="PrafabPainterGUI.cs" t="Include" />
+                <e p="PrefabPainter.cs" t="Include" />
+              </e>
+              <e p="PrefabPainterSceneSettings.cs" t="Include" />
+              <e p="PrefabPainterSettings.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="GUITextureClipLevels.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="WeatherMaker" t="Include">
             <e p="ChangeLog.txt" t="Include" />
@@ -1520,6 +1538,15 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="ShipController.cs" t="Include" />
+        </e>
+        <e p="Suriyun" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="AnimatorController.cs" t="Include" />
+            <e p="Camera Scripts" t="Include">
+              <e p="MouseOrbitImproved.cs" t="Include" />
+            </e>
+            <e p="Swapper.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

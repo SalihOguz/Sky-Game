@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="281879a5-d8e6-41df-b35c-88f298753d38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sky Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sky Game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sky Game/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sky Game/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Sky Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Sky Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Outlined_ship.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Outlined_ship.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/IL3DN/Graphics/Materials/IL3DN_Fog.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/IL3DN/Graphics/Materials/IL3DN_Fog.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/IL3DN/Scripts/IL3DN_SimpleFPSController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/IL3DN/Scripts/IL3DN_SimpleFPSController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zeppelin_new.blend" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Zeppelin_new.blend.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/zeppelin_unpack_Project.blend1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/zeppelin_unpack_Project.blend1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ShipController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +26,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ShipController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Outtakefever/Assets/Scripts/CarController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Models/IL3DN/Scripts/IL3DN_SimpleFPSController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Outtakefever/Assets/Scripts/LevelController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -70,6 +79,8 @@
       <updated>1596390096461</updated>
       <workItem from="1596390195829" duration="459000" />
       <workItem from="1596460474373" duration="3941000" />
+      <workItem from="1596892190955" duration="18347000" />
+      <workItem from="1596973964601" duration="873000" />
     </task>
     <servers />
   </component>

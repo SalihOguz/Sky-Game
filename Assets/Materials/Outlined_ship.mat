@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Outlined_ship
   m_Shader: {fileID: 4800000, guid: 273873a89ee343b45a1471ba4c363d79, type: 3}
-  m_ShaderKeywords: OUTLINES TCP2_OUTLINE_CONST_SIZE
+  m_ShaderKeywords: OUTLINES
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -73,7 +73,7 @@ Material:
     - _OcclusionStrength: 1
     - _Offset1: 0
     - _Offset2: 0
-    - _Outline: 0.51
+    - _Outline: 1.51
     - _Parallax: 0.02
     - _RampSmooth: 0.1
     - _RampThreshold: 0.5
@@ -81,9 +81,9 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendOutline: 5
-    - _TexLod: 5
+    - _TexLod: 10
     - _UVSec: 0
-    - _ZSmooth: -0.5
+    - _ZSmooth: -3
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
