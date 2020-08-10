@@ -173,7 +173,7 @@ MonoBehaviour:
   active: 1
   enabled:
     overrideState: 1
-    value: 0
+    value: 1
   _Density:
     overrideState: 1
     value: 20
