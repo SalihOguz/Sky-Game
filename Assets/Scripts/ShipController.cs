@@ -99,7 +99,10 @@ public class ShipController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        _rb.velocity = Vector3.zero;
+        _rb.angularVelocity = Vector3.zero;
         MoveZeppelin(_movement, _rotation);
+        // TODO if floating, give some movement like waves on sea
     }
 
     private void MoveZeppelin(Vector3 direction, Vector3 rotation)
