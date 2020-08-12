@@ -79,10 +79,12 @@ Shader "IL3DN/Terrain First-Pass"
 			float4 weightedBlendVar9_g11 = SplatControl26_g11;
 			float4 weightedBlend9_g11 = ( weightedBlendVar9_g11.x*saturate( ( staticSwitch88_g11 + ( _Color0 * tex2D( _Splat0, uv_Splat0 ) ) ) ) + weightedBlendVar9_g11.y*saturate( ( staticSwitch88_g11 + ( _Color1 * tex2D( _Splat1, uv_Splat1 ) ) ) ) + weightedBlendVar9_g11.z*saturate( ( staticSwitch88_g11 + ( _Color2 * tex2D( _Splat2, uv_Splat2 ) ) ) ) + weightedBlendVar9_g11.w*saturate( ( staticSwitch88_g11 + ( _Color3 * tex2D( _Splat3, uv_Splat3 ) ) ) ) );
 			float4 MixDiffuse28_g11 = weightedBlend9_g11;
-			o.Albedo = MixDiffuse28_g11.xyz;
+			float4 temp_output_32_0 = MixDiffuse28_g11;
+			o.Albedo = temp_output_32_0.xyz;
 			o.Alpha = 1;
 			float2 uv_TerrainHolesTexture = i.uv_texcoord * _TerrainHolesTexture_ST.xy + _TerrainHolesTexture_ST.zw;
-			clip( tex2D( _TerrainHolesTexture, uv_TerrainHolesTexture ).r - _Cutoff );
+			float4 tex2DNode33 = tex2D( _TerrainHolesTexture, uv_TerrainHolesTexture );
+			clip( tex2DNode33.r - _Cutoff );
 		}
 
 		ENDCG
@@ -166,12 +168,14 @@ Shader "IL3DN/Terrain First-Pass"
 }
 /*ASEBEGIN
 Version=18301
-558;902;1409;546;1078.356;351.3822;1;True;True
-Node;AmplifyShaderEditor.SamplerNode;33;-886.3564,-166.3822;Inherit;True;Property;_TerrainHolesTexture;_TerrainHolesTexture;1;1;[HideInInspector];Create;True;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.FunctionNode;32;-418.678,-167.3597;Inherit;False;IL3DN - Four Splats First Pass Terrain;2;;11;c3e2b73ed8eb8c64681162a2abca2a89;0;3;59;FLOAT4;0,0,0,0;False;60;FLOAT4;0,0,0,0;False;62;FLOAT;0;False;2;FLOAT4;0;FLOAT;19
-Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;-29,-269;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;IL3DN/Terrain First-Pass;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Masked;0.5;True;True;-100;False;TransparentCutout;;AlphaTest;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;0;-1;-1;-1;1;SplatCount=4;False;1;BaseMapShader=ASESampleShaders/SimpleTerrainBase;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+1075;922;1409;546;1291.538;281.1788;1.041247;True;True
+Node;AmplifyShaderEditor.SamplerNode;33;-1179.841,-231.3521;Inherit;True;Property;_TerrainHolesTexture;_TerrainHolesTexture;1;1;[HideInInspector];Create;True;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.FunctionNode;32;-653.678,-291.3597;Inherit;False;IL3DN - Four Splats First Pass Terrain;2;;11;c3e2b73ed8eb8c64681162a2abca2a89;0;3;59;FLOAT4;0,0,0,0;False;60;FLOAT4;0,0,0,0;False;62;FLOAT;0;False;2;FLOAT4;0;FLOAT;19
+Node;AmplifyShaderEditor.LayeredBlendNode;34;-243.5494,-205.9075;Inherit;False;6;0;FLOAT;0;False;1;FLOAT4;0,0,0,0;False;2;FLOAT4;0,0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;1;FLOAT4;0
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;101.8371,-279.1762;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;IL3DN/Terrain First-Pass;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Masked;0.5;True;True;-100;False;TransparentCutout;;AlphaTest;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;0;-1;-1;-1;1;SplatCount=4;False;1;BaseMapShader=ASESampleShaders/SimpleTerrainBase;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;32;62;33;0
+WireConnection;34;1;32;0
 WireConnection;0;0;32;0
-WireConnection;0;10;32;19
+WireConnection;0;10;33;0
 ASEEND*/
-//CHKSM=C68435CE31FDAF28DCAB69D4535323DF0676AB13
+//CHKSM=B47201AEE2EAE7F29F6373D2FADF73F7A518B2ED
