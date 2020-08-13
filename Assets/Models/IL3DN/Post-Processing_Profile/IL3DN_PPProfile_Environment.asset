@@ -176,7 +176,7 @@ MonoBehaviour:
     value: 1
   _Density:
     overrideState: 1
-    value: 1.7
+    value: 7.3
   _NearColor:
     overrideState: 1
     value: {r: 1, g: 0.6745098, b: 0.41960785, a: 0}

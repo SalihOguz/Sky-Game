@@ -142,7 +142,7 @@ Material:
     - _Metallic: 0.398
     - _Mode: 3
     - _NormalScale: 0.18
-    - _NormalStrenght: 0.45
+    - _NormalStrenght: 0.209
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RefractionAmount: 0
@@ -162,10 +162,10 @@ Material:
     - _TessValue: 16
     - _Tiling: 0.05
     - _TranslucencyViewDependency: 0
-    - _Transparency: 0
+    - _Transparency: 0.5
     - _UVSec: 0
     - _WaterDepth: 0
-    - _WaterFalloff: -0.51
+    - _WaterFalloff: -0.177
     - _WaterOpacity: 0.088
     - _WaterSmoothness: 0.33
     - _WaterSpecular: 0
