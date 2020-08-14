@@ -29,4 +29,5 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - __dirty: 0
+    - _speed: 20
     m_Colors: []
