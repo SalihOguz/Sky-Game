@@ -214,7 +214,7 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 1.13
+    value: 1.59
   contrast:
     overrideState: 1
     value: 20
@@ -1554,7 +1554,7 @@ MonoBehaviour:
     value: 0.18
   softKnee:
     overrideState: 1
-    value: 0.5
+    value: 0.67
   clamp:
     overrideState: 1
     value: 65472

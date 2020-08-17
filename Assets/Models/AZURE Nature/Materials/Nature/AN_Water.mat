@@ -66,7 +66,7 @@ Material:
     - _FoamDistance: 0.35
     - _FoamOpacity: 1
     - _Normal: 0.15
-    - _Opacity: 1
+    - _Opacity: 0.888
     - _Power: 0.2
     - _RefractionIntensity: 0.15
     - _RefractionScale: 0.2
@@ -80,8 +80,8 @@ Material:
     - _Translucency: 0
     - _UDepthDistance: 0.3
     - _UDistancePower: 0.1
-    - _WavesNormalIntensity: 0.35
-    - _WavesSpeed: 0.1
+    - _WavesNormalIntensity: 0.201
+    - _WavesSpeed: 0.033
     - _WavesTile: 0.15
     - __dirty: 0
     m_Colors:
